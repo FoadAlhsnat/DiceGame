@@ -1,8 +1,16 @@
 
 .container{
   display: flex;
+  background: #A2ABB5;
+ height: 100vh;
+ justify-content: center;
 }
 
-.winner{
+.action{
+  background: #95D9DA;
+  width: 20vw;
+}
 
+.action .winner{
+  font-size: 30px;
 }

@@ -1,19 +1,23 @@
 import React, { Component } from 'react'
+import './player.css'
 
 export class Player extends Component {
 
-  render(){
+  render() {
     return (
-      <div className="playerinfo">
+      <div className={`playerinfo ${this.props.active}`}>
         <h1>{this.props.name}</h1>
-        <div className="score">
-        score
-          {this.props.score}</div>
-        <div className="current">
-        current
-          {this.props.current}</div>
-        </div>)
-    }
+        <div>
+          <div className="score">
+            {this.props.score}</div>
+          <div className="current">
+            <p>current:</p>
+          <p>{this.props.current}</p></div>
+
+        </div>
+
+      </div>)
+  }
 }
 
 export default Player
